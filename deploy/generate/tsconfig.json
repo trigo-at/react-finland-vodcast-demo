@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "declarationDir": "./dist/",
+        "target": "ES2017",
+        // Search under node_modules for non-relative imports.
+        "moduleResolution": "node",
+        // Enable strictest settings like strictNullChecks & noImplicitAny.
+        // "strict": true,
+        // Import non-ES modules as default imports.
+        "esModuleInterop": true,
+        "jsx": "react",
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "rootDir": ".",
+        "baseUrl": ".",
+        "module": "CommonJS",
+    },
+    "include": ["./generate.ts"],
+    "exclude": ["node_modules"]
+}
