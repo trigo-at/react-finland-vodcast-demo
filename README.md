@@ -28,6 +28,22 @@ npm run console
 
 This opens a browser window at `http://localhost:9695/console/api-explorer`.
 
+### Prepare Environment Variables
+
+The app uses some environment variables to access the database, SMTP server and stuff like that. Use the example file as starting point.
+
+```bash
+cp .env.local.example .env.local
+```
+
+| Variable  | Purpose   |
+|---|---|
+| DATABASE_URL   | url to access the PostgreSQL database. Required for the email provider  |
+| EMAIL_SERVER  | SMTP server to send the emails for the passwordless flow (we use https://mailtrap.io/ for development) |
+| EMAIL_FROM  | from adresse  |
+| NEXTAUTH_URL| used by NextAuth.js (it works without but NextAuth.js outputs a warnning it the variable is not set) |
+| SECRET  | A random string used to hash tokens, sign cookies and generate crytographic keys. You could use https://generate-secret.now.sh/32 to generate a secret  |
+
 ### Prepare SQL Schema for NextAuth
 
 Goto `http://localhost:9695/console/data/sql` and Copy&Paste the Schema from `https://next-auth.js.org/adapters/typeorm/postgres` into the Editor. Hit "Run" at the Bottom.
