@@ -1,12 +1,15 @@
 {
     "extends": [
-        "trigo/node-typescript",
+        "trigo/react-typescript",
         "prettier"
     ],
     "plugins": [
-        "prettier"
+        "prettier",
+        "@next/next"
     ],
     "rules": {
-		"prettier/prettier": ["error"]
+		"prettier/prettier": ["error"],
+        "react/require-default-props": 0,
+        "jsx-a11y/anchor-is-valid": 0
     }
 }

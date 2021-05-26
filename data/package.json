@@ -1,0 +1,15 @@
+{
+  "name": "@trigo/react-finland-vodcast-demo.data",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "hasura migrate apply --admin-secret myadminsecretkey && hasura metadata apply --admin-secret myadminsecretkey && hasura console --admin-secret myadminsecretkey",
+    "console": "hasura console --admin-secret myadminsecretkey"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hasura-cli": "^1.3.3"
+  }
+}

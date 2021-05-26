@@ -1,14 +1,16 @@
 {
-  "name": "@trigo/project-template",
+  "name": "@trigo/react-finland-vodcast-demo",
   "private": true,
   "version": "0.0.0",
-  "description": "An opinionated project template by TRIGO",
+  "description": "React Finland Vodcast Demo",
   "main": "index.js",
   "scripts": {
     "prettify": "prettier --write '**/*.{js,jsx}'",
     "lint": "eslint \"**/*.{js,jsx}\"",
-    "make:template": "npx tsc -p ./deploy/generate && npx tcoa ./deploy/generate/generate.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -18,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trigo-at/project-template.git"
+    "url": "git+https://github.com:trigo-at/react-finland-vodcast-demo.git"
   },
   "keywords": [
     "template",
@@ -27,26 +29,45 @@
   "author": "TRIGO GmbH <hello@trigo.at>",
   "license": "MIT",
   "devDependencies": {
+    "-": "^0.0.1",
     "@babel/eslint-parser": "^7.14.3",
-    "@trigo/trigo-create-openshift-app": "^0.0.7",
-    "eslint": "^7.26.0",
+    "@next/eslint-plugin-next": "^10.2.3",
+    "@types/next-auth": "^3.15.0",
+    "@types/node": "^15.6.1",
+    "@types/react": "^17.0.8",
+    "@types/react-dom": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-trigo": "^18.0.5",
     "eslint-plugin-compat": "^3.9.0",
     "eslint-plugin-filenames": "^1.3.2",
-    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-import": "^2.23.3",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-mocha": "^8.1.0",
+    "eslint-plugin-mocha": "^8.2.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
     "hygen": "^6.1.0",
+    "jest": "^27.0.1",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
     "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.3",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "framer-motion": "^4.1.17",
+    "next": "^10.2.3",
+    "next-auth": "^3.23.3",
+    "pg": "^8.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
