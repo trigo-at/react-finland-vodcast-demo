@@ -10,8 +10,6 @@ export default function Server() {
     // is used by `useSession()`.
     const [session] = useSession();
 
-    console.log(session);
-
     return (
         <Layout>
             <Heading as="h1">Server Side Rendering</Heading>

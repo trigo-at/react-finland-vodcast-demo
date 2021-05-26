@@ -18,15 +18,6 @@ const ApiExample = () => (
             title="session"
             src="/api/examples/session"
         />
-        <Heading as="h2">JSON Web Token</Heading>
-        <Text mt={2}>/api/examples/jwt</Text>
-        <Box
-            py={6}
-            border="1px"
-            as="iframe"
-            title="jwt"
-            src="/api/examples/jwt"
-        />
     </Layout>
 );
 

@@ -18,8 +18,6 @@ import {
 export default function Header() {
     const [session, loading] = useSession();
 
-    console.log(session);
-
     return (
         <header>
             <div>
@@ -44,7 +42,7 @@ export default function Header() {
                             <AlertIcon />
                             <AlertTitle mr={2}>Signed in as</AlertTitle>
                             <AlertDescription>
-                                {session.user.email || session.user.name}
+                                {session.user.name || session.user.email}
                             </AlertDescription>
                             <Button
                                 position="absolute"
